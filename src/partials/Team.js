@@ -18,7 +18,7 @@ function Team() {
             <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <img className="rounded-full mb-4" src={require('../images/team-member-01.jpg').default} width="120" height="120" alt="Team member 01" />
-                <h4 className="text-xl font-bold mb-1">Mark Lamprecht</h4>
+                <h4 className="text-xl font-bold mb-1">Glen</h4>
                 <div className="text-blue-600 font-medium mb-2">CEO & Co-founder</div>
                 <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
                 <div className="text-sm text-gray-600 font-medium">
@@ -31,7 +31,7 @@ function Team() {
             <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="150" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <img className="rounded-full mb-4" src={require('../images/team-member-02.jpg').default} width="120" height="120" alt="Team member 02" />
-                <h4 className="text-xl font-bold mb-1">Jessie Pietrasiak</h4>
+                <h4 className="text-xl font-bold mb-1">Dave Roberts</h4>
                 <div className="text-blue-600 font-medium mb-2">CTO & Co-founder</div>
                 <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
                 <div className="text-sm text-gray-600 font-medium">
@@ -44,7 +44,7 @@ function Team() {
             <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="300" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <img className="rounded-full mb-4" src={require('../images/team-member-03.jpg').default} width="120" height="120" alt="Team member 03" />
-                <h4 className="text-xl font-bold mb-1">Marina Hoffman</h4>
+                <h4 className="text-xl font-bold mb-1">Tanner Roberts</h4>
                 <div className="text-blue-600 font-medium mb-2">Community Manager</div>
                 <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
                 <div className="text-sm text-gray-600 font-medium">
@@ -56,12 +56,12 @@ function Team() {
             {/* 4th member */}
             <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="450" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
-                <img className="rounded-full mb-4" src={require('../images/team-member-04.jpg').default} width="120" height="120" alt="Team member 04" />
-                <h4 className="text-xl font-bold mb-1">Anthony McGargle</h4>
-                <div className="text-blue-600 font-medium mb-2">Lead Front-end Engineer</div>
-                <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
+                <img className="rounded-full mb-4" src={require('../images/talon.jpg').default} width="120" height="120" alt="Team member 04" />
+                <h4 className="text-xl font-bold mb-1">Talon Walz</h4>
+                <div className="text-blue-600 font-medium mb-2">Software Engineer</div>
+                <p className="text-gray-600 text-center mb-3">Born and raised in Sedona, AZ and is now happily married and lives in Saratoga Springs, UT. Enjoys getting outside and being active.</p>
                 <div className="text-sm text-gray-600 font-medium">
-                  <a className="text-gray-900 hover:underline" href="#0">Twitter</a> · <a className="text-gray-900 hover:underline" href="#0">GitHub</a> · <a className="text-gray-900 hover:underline" href="#0">LinkedIn</a>
+                  <a className="text-gray-900 hover:underline" href="#0">Twitter</a> · <a className="text-gray-900 hover:underline" href="#0">LinkedIn</a>
                 </div>
               </div>
             </div>

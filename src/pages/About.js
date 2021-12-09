@@ -23,7 +23,7 @@ function About() {
         {/*  Page sections */}
         <AboutIntro />
         <AboutStory />
-        <Stats />
+        {/* <Stats /> */}
         <Team />
         <Career />
         <Process />
