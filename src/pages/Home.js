@@ -8,6 +8,12 @@ import FeaturesWorld from '../partials/FeaturesWorld';
 import News from '../partials/News';
 import Cta from '../partials/Cta';
 import Footer from '../partials/Footer';
+import SmoothScroll from 'smooth-scroll' 
+
+export const scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 200,
+  speedAsDuration: true,
+})
 
 function Home() {
   return (
@@ -23,8 +29,8 @@ function Home() {
         <HeroHome />
         <FeaturesHome />
         <FeaturesBlocks />
-        <FeaturesWorld />
-        <News />
+        {/* <FeaturesWorld /> */}
+        {/* <News /> */}
         <Cta />
 
       </main>
