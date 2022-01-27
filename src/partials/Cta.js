@@ -1,4 +1,5 @@
 import React from 'react';
+import appstore from '../images/appstore.png';
 
 function Cta() {
   return (
@@ -18,8 +19,12 @@ function Cta() {
               </div>
 
               {/* CTA button */}
-              <div>
-                <a className="btn text-blue-600 bg-gradient-to-r from-blue-100 to-white" href="#0">Download for free</a>
+              <div >
+                <a className="btn relative flex space-x-4 text-gray-900 hover:text-teal-50 bg-gradient-to-r from-blue-100 to-white" href="#0">
+                  <img src={appstore} alt="App store"/>
+                  <p>Download now</p>
+                </a>
+                
               </div>
 
             </div>

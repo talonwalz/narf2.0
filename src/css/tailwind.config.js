@@ -76,6 +76,7 @@ module.exports = {
         '3xl': '2rem',
         '4xl': '2.625rem',
         '5xl': '3.25rem',
+        '5.5xl': '4rem',
         '6xl': '5.5rem',
       },
       inset: {
