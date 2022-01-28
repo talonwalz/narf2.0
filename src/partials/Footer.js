@@ -61,10 +61,10 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</Link>
+                <Link to="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</Link>
+                <Link to="/about" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</Link>
               </li>
               {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>

@@ -121,11 +121,17 @@ return (
               <li>
                 <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
               </li>
-              <li><a href='#hero-home' className='page-scroll font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight'>home</a></li>
-            </Dropdown>
-            <li>
+              <li>
               <Link to="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Audimojis</Link>
             </li>
+              <li>
+                <a href='#hero-home' className='page-scroll font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight'>home</a>
+              </li>
+            </Dropdown>
+            
+            <li>
+                <Link to="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Contact us</Link>
+              </li>
           </ul>
 
           {/* Desktop sign in links */}

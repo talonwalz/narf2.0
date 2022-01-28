@@ -33,7 +33,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 1</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -49,7 +49,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 2</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -66,7 +66,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 3</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -83,7 +83,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 4</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -99,7 +99,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 5</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -114,7 +114,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Headless CMS</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Emoji 6</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
