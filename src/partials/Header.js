@@ -50,9 +50,9 @@ return (
       <div className="flex items-center justify-between h-16 md:h-20">
 
         {/* Site branding */}
-        <div className="flex-shrink-0 mr-4">
+        <div className="flex-shrink-0 mr-4 ">
           {/* Logo */}
-          <Link to="/" className="block" aria-label="Cruip">
+          <Link to="/" className="block" aria-label="Cruip" >
             {/* <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
               <defs>
                 <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="header-logo">
@@ -63,7 +63,7 @@ return (
               </defs>
               <rect width="32" height="32" rx="16" fill="url(#header-logo)" fillRule="nonzero" />
             </svg> */}
-            <img src={logo} alt="audimojis"/>
+            <img className="w-fit h-20" src={logo} alt="audimojis" />
           </Link>
         </div>
         {/* Website Name */}
@@ -71,7 +71,7 @@ return (
 
         {/* Desktop navigation */}
         <nav className="hidden md:flex md:flex-grow">
-
+        {/* <img src={logo} alt="audimojis"/> */}
           {/* Desktop menu links */}
           <ul className="flex flex-grow justify-end flex-wrap items-center">
           { location.pathname !== '/' ?
@@ -130,7 +130,7 @@ return (
             </Dropdown>
             
             <li>
-                <Link to="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Contact us</Link>
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Contact us</Link>
               </li>
           </ul>
 

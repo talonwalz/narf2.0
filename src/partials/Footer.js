@@ -66,10 +66,10 @@ function Footer() {
               <li className="mb-2">
                 <Link to="/about" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</Link>
               </li>
-              {/* <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
-              </li>
               <li className="mb-2">
+                <Link to="/support" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Contact us</Link>
+              </li>
+              {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>
               </li>
               <li className="mb-2">
