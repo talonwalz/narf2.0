@@ -12,7 +12,6 @@ const [top, setTop] = useState(true);
 const trigger = useRef(null);
 const mobileNav = useRef(null);
 const location = useLocation();
-console.log(location)
 
 // close the mobile menu on click outside
 useEffect(() => {

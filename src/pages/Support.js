@@ -1,11 +1,29 @@
-import React from 'react';
-
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Header from '../partials/Header';
 
 import Footer from '../partials/Footer';
 
 function Support() {
+  const [first, setFirst] = useState('');
+  const [last, setLast] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [country, setCountry] = useState('');
+  
+  const form = useRef();
+  const sendEmail = (e) => {
+    e.preventDefault();
 
+    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    emailjs.sendForm('gmail', 'template_7nlu4to', form.current, 'user_xEWI2orbMXf48SBIwv08s')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
 
@@ -137,27 +155,27 @@ function Support() {
               </div>
 
               {/* Contact form */}
-              <form className="max-w-xl mx-auto">
+              <form className="max-w-xl mx-auto" ref={form} onSubmit={sendEmail}>
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full md:w-1/2 px-3 mb-4 md:mb-0">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="first-name">First Name <span className="text-red-600">*</span></label>
-                    <input id="first-name" type="text" className="form-input w-full text-gray-800" placeholder="Enter your first name" required />
+                    <input onChange={e => setFirst(e.target.value)} id="first-name" name="first" value={first} type="text" className="form-input w-full text-gray-800" placeholder="Enter your first name" required />
                   </div>
                   <div className="w-full md:w-1/2 px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="last-name">Last Name <span className="text-red-600">*</span></label>
-                    <input id="last-name" type="text" className="form-input w-full text-gray-800" placeholder="Enter your last name" required />
+                    <input onChange={e=>setLast(e.target.value)} id="last-name" name="last" value={last} type="text" className="form-input w-full text-gray-800" placeholder="Enter your last name" required />
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="email">Email <span className="text-red-600">*</span></label>
-                    <input id="email" type="email" className="form-input w-full text-gray-800" placeholder="Enter your email address" required />
+                    <input onChange={e=>setEmail(e.target.value)} id="email" name="email" value={email} type="email" className="form-input w-full text-gray-800" placeholder="Enter your email address" required />
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="subject">Subject <span className="text-red-600">*</span></label>
-                    <input id="subject" type="text" className="form-input w-full text-gray-800" placeholder="How can we help you?" required />
+                    <input onChange={e=>setSubject(e.target.value)} id="subject" name="subject" value={subject} type="text" className="form-input w-full text-gray-800" placeholder="How can we help you?" required />
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-4">
@@ -173,12 +191,12 @@ function Support() {
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="message">Message</label>
-                    <textarea id="message" rows="4" className="form-textarea w-full text-gray-800" placeholder="Write your message"></textarea>
+                    <textarea onChange={e=>setMessage(e.target.value)} id="message" name="message" value={message} rows="4" className="form-textarea w-full text-gray-800" placeholder="Write your message"></textarea>
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mt-4">
                   <div className="w-full px-3">
-                    <button className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Send</button>
+                    <button type="submit" className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Send</button>
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mt-4">
