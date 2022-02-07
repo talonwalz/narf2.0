@@ -83,7 +83,7 @@ function Team() {
             <div className="sm:w-1/2 md:w-1/3 py-6 sm:py-8 sm:px-3" data-aos="zoom-y-out" data-aos-delay="750" data-aos-anchor="[data-aos-id-team]">
               <div className="flex flex-col items-center">
                 <img className="rounded-full mb-4" src={require('../images/team-member-06.jpg').default} width="120" height="120" alt="Team member 06" />
-                <h4 className="text-xl font-bold mb-1">Marina Hoffman</h4>
+                <h4 className="text-xl font-bold mb-1">Quin Lopez</h4>
                 <div className="text-teal-50 font-medium mb-2">Front-end Engineer</div>
                 <p className="text-gray-600 text-center mb-3">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum sint occaecat cupidatat.</p>
                 <div className="text-sm text-gray-600 font-medium">

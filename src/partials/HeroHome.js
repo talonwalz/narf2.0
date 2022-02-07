@@ -36,17 +36,17 @@ function HeroHome() {
             <h1 className="text-5xl md:text-5.5xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Bring your messages to life with </h1>
             <h1 className="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-50 to-yellow-50">AUDIMOJIS</h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Send all the same emojis you already know and love but with sound! This iOS app will take text messaging to a new level.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Send all the same emojis you already know and love but with sound! This iOS app will take messaging to a new level.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-              <a className="appstorebtn w-full mb-4 sm:w-auto sm:mb-0" href="https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580?itsct=apps_box_badge&amp;itscg=30200" target="_blank" rel="noreferrer">
-                <img className="h-12" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1310601600&h=e49e169c7275536c6c3a2aac56e43a1d" alt="Download on the App Store"/>
+              <a className="appstorebtn w-40 mb-4 sm:w-auto sm:mb-0" href="https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580?itsct=apps_box_badge&amp;itscg=30200" target="_blank" rel="noreferrer">
+                <img className="w-full sm:w-full sm:h-12 sm:w-40 hover:shadow-xl" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1310601600&h=e49e169c7275536c6c3a2aac56e43a1d" alt="Download on the App Store"/>
               </a>
                 {/* <div>
                   <a className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Download for FREE</a>
                 </div> */}
                 
                 <div>
-                  <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-full sm:w-auto sm:ml-4" href="#features">Learn more</a>
+                  <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Learn more</a>
                 </div>
               </div>
             </div>
