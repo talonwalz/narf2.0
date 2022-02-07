@@ -172,8 +172,8 @@ return (
             leaveStart="opacity-100"
             leaveEnd="opacity-0"              
           >
-            <ul className="px-5 py-2">
-            { location.pathname === '/' ?
+          <ul className="px-5 py-2">
+          { location.pathname === '/' ?
           <li>
             <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#home' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>Home</a>
             <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#features' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>Overview</a>
@@ -183,7 +183,7 @@ return (
           <li>
             <Link to="/" className="flex text-gray-600 hover:text-gray-900 py-2">Home</Link>
           </li>
-            }
+          }
           {
           location.pathname === '/about' ?
           <li>
@@ -236,7 +236,7 @@ return (
                   </svg>
                 </Link>
               </li> */}
-            </ul>
+          </ul>
           </Transition>
         </div>
 
