@@ -1,8 +1,10 @@
 import React, { useRef, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import Header from '../partials/Header';
 
 import Footer from '../partials/Footer';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Support() {
   const [first, setFirst] = useState('');
@@ -20,16 +22,35 @@ function Support() {
     emailjs.sendForm('gmail', 'template_7nlu4to', form.current, 'user_xEWI2orbMXf48SBIwv08s')
       .then((result) => {
           console.log(result.text);
+          clearForm();
+          confirmation();
       }, (error) => {
+          failed();
           console.log(error.text);
       });
   };
+  const clearForm = () => {
+    setFirst('');
+    setLast('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  }
+  const confirmation = () => {
+    toast.success('Message Sent', {
+      theme: 'colored',
+      autoClose: 2500
+    })
+  }
+  const failed = () => {
+    toast.error('Message failed to send!',{
+      theme: 'colored'
+    })
+  }
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
-
       {/*  Site header */}
       <Header />
-
       {/*  Page content */}
       <main className="flex-grow">
 
@@ -181,10 +202,10 @@ function Support() {
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="country">Country</label>
-                    <select id="country" className="form-select w-full text-gray-500">
-                      <option>United States</option>
-                      <option>United Kingdom</option>
-                      <option>Germany</option>
+                    <select id="country" name="country" className="form-select w-full text-gray-500">
+                      <option value="United States">United States</option>
+                      <option value="United Kingdom">United Kingdom</option>
+                      <option value="Germany">Germany</option>
                     </select>
                   </div>
                 </div>
@@ -196,20 +217,20 @@ function Support() {
                 </div>
                 <div className="flex flex-wrap -mx-3 mt-4">
                   <div className="w-full px-3">
-                    <button type="submit" className="btn text-white bg-blue-600 hover:bg-blue-700 w-full">Send</button>
+                    <button type="submit" className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full">Send</button>
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mt-4">
                   By clicking "send" you consent to allow Simple to store and process the personal information submitted above and agree to our <a className="underline" href="#0">terms and conditions</a> as well as our <a className="underline" href="#0">Privacy Policy</a>.
                 </div>
               </form>
-
             </div>
           </div>
         </section>
-
+        {/* <button onClick={()=>confirmation()}>Success</button>
+        <button onClick={()=>failed()}>Failed</button> */}
       </main>
-
+    <ToastContainer />
       {/*  Site footer */}
       <Footer />
 
