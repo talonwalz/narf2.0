@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import Transition from '../utils/Transition.js';
 import Dropdown from '../utils/Dropdown';
-import logo from '../images/audimojisIcon.png';
+import logo from '../images/logoIcon.png';
 
 function Header(props) {
 
