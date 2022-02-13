@@ -29,36 +29,18 @@ function HeroHome() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-32 pb-12 md:pt-24 md:pb-20">
 
-          {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
-            <h1 className="text-5xl md:text-5.5xl font-bold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Bring your messages to life with </h1>
-            <h1 className="text-5xl md:text-6xl font-bold leading-tighter tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-50 to-yellow-50">AUDIMOJIS</h1>
-            <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">Send all the same emojis you already know and love but with sound! This iOS app will take messaging to a new level.</p>
-              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-              <a className="appstorebtn w-40 mb-4 sm:w-auto sm:mb-0" href="https://apps.apple.com/us/app/spotify-new-music-and-podcasts/id324684580?itsct=apps_box_badge&amp;itscg=30200" target="_blank" rel="noreferrer">
-                <img className="w-full sm:w-full sm:h-12 sm:w-40 hover:shadow-xl" src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1310601600&h=e49e169c7275536c6c3a2aac56e43a1d" alt="Download on the App Store"/>
-              </a>
-                {/* <div>
-                  <a className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Download for FREE</a>
-                </div> */}
-                
-                <div>
-                  <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Learn more</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
           {/* Hero image */}
           <div>
             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
               <div className="flex flex-col justify-center">
-                <img className="mx-auto" src={require('../images/hero-image-01.png').default} width="768" height="432" alt="Hero" />
+              {/* <h1 className="text-2xl md:text-4xl font-bold italic leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Empowering Our Community One Person At A Time.</h1> */}
+                <img className="mx-auto" src={require('../images/narfBuilding.jpeg').default} width="700" height="auto" alt="Hero" />
                 <svg className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto" width="768" height="432" viewBox="0 0 768 432" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
-                  <defs>
+                  {/* <defs>
                     <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-ill-a">
                       <stop stopColor="#FFF" offset="0%" />
                       <stop stopColor="#EAEAEA" offset="77.402%" />
@@ -75,7 +57,7 @@ function HeroHome() {
                       <stop stopColor="#338CF5" offset="100%" />
                     </radialGradient>
                     <circle id="hero-ill-d" cx="384" cy="216" r="64" />
-                  </defs>
+                  </defs> */}
                   <g fill="none" fillRule="evenodd">
                     <circle fillOpacity=".04" fill="url(#hero-ill-a)" cx="384" cy="216" r="128" />
                     <circle fillOpacity=".16" fill="url(#hero-ill-b)" cx="384" cy="216" r="96" />
@@ -86,26 +68,41 @@ function HeroHome() {
                   </g>
                 </svg>
               </div>
-              <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
+              {/* <button className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" onClick={(e) => { e.preventDefault(); e.stopPropagation(); setVideoModalOpen(true); }} aria-controls="modal">
                 <svg className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
                   <path d="M10 17l6-5-6-5z" />
                 </svg>
                 <span className="ml-3">Watch the full video (2 min)</span>
-              </button>
+              </button> */}
+              <a className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" href="#features">
+                <span className="ml-6 mr-6 hover:text-teal-50">Our Mission</span>
+              </a>
             </div>
-
+{/* Section header */}
+<div className="text-center pb-12 md:pb-16 md:pt-10">
+            <h1 className="text-2xl md:text-3xl font-bold italic leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Empowering Our Community One Person At A Time.</h1>
+            <h1 className="text-5xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-50 to-yellow-50">Northern Arizona Rehabilitation and Fitness</h1>
+            <div className="max-w-3xl mx-auto">
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</p>
+              <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
+                <div>
+                  <a className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Schedule Appointment</a>
+                </div>
+                {/* <div>
+                  <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Learn more</a>
+                </div> */}
+              </div>
+            </div>
+          </div>
             {/* Modal */}
-            <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
+            {/* <Modal id="modal" ariaLabel="modal-headline" show={videoModalOpen} handleClose={() => setVideoModalOpen(false)}>
               <div className="relative pb-9/16">
                 <iframe className="absolute w-full h-full" src="https://player.vimeo.com/video/174002812" title="Video" allowFullScreen></iframe>
               </div>
-            </Modal>
-
+            </Modal> */}
           </div>
-
         </div>
-
       </div>
     </section>
   );

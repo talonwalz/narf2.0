@@ -75,7 +75,10 @@ return (
             <a href='#features-blocks' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Features</a>
           </>
         }
-        {
+        <li>
+              <Link to="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Team</Link>
+        </li>
+        {/* {
           location.pathname === '/about' ?
           <>
             <a href='#intro' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>About us</a>
@@ -85,7 +88,7 @@ return (
             <li>
               <Link to="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">About us</Link>
             </li>
-            }
+            } */}
           {/* Take out Tutorials for now */}
           {/* <li>
             <Link to="/tutorials" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">
@@ -183,7 +186,10 @@ return (
             <Link to="/" className="flex text-gray-600 hover:text-gray-900 py-2">Home</Link>
           </li>
           }
-          {
+          <li>
+              <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">Team</Link>
+        </li>
+          {/* {
           location.pathname === '/about' ?
           <li>
             <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#intro' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>About us</a>
@@ -193,7 +199,7 @@ return (
           <li>
             <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">About us</Link>
           </li>
-          }
+          } */}
               {/* <li>
                 <Link to="/pricing" className="flex text-gray-600 hover:text-gray-900 py-2">Pricing</Link>
               </li>

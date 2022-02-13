@@ -8,7 +8,7 @@ function AboutIntro() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h1 mb-4">Audiotrocities</h1>
+            <h1 className="h1 mb-4">Northern Arizona Rehab & Fitness</h1>
             <p className="text-xl text-gray-600">
             We build apps that take things we use everyday to the next level.
             </p>

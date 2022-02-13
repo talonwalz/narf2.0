@@ -21,8 +21,8 @@ function About() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <AboutIntro />
-        <AboutStory />
+        {/* <AboutIntro /> */}
+        {/* <AboutStory /> */}
         {/* <Stats /> */}
         <Team />
         {/* <Career /> */}
