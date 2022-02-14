@@ -10,15 +10,15 @@ function Support() {
   const [first, setFirst] = useState('');
   const [last, setLast] = useState('');
   const [email, setEmail] = useState('');
-  const [subject, setSubject] = useState('');
+  const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
   const [country, setCountry] = useState('');
+  const [loading, setLoading] = useState(false);
   
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
-    // emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_USER_ID')
+    setLoading(true);
     emailjs.sendForm('gmail', 'template_7nlu4to', form.current, 'user_xEWI2orbMXf48SBIwv08s')
       .then((result) => {
           console.log(result.text);
@@ -33,8 +33,9 @@ function Support() {
     setFirst('');
     setLast('');
     setEmail('');
-    setSubject('');
+    setPhone('');
     setMessage('');
+    setLoading(false);
   }
   const confirmation = () => {
     toast.success('Message Sent', {
@@ -166,7 +167,7 @@ function Support() {
         </section>
 
         {/* Contact section */}
-        <section>
+        <section className="bg-gradient-to-b from-gray-100 to-gray-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
 
@@ -195,17 +196,17 @@ function Support() {
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
-                    <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="subject">Subject <span className="text-red-600">*</span></label>
-                    <input onChange={e=>setSubject(e.target.value)} id="subject" name="subject" value={subject} type="text" className="form-input w-full text-gray-800" placeholder="How can we help you?" required />
+                    <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="subject">Phone Number <span className="text-red-600">*</span></label>
+                    <input onChange={e=>setPhone(e.target.value)} id="phone number" name="phone number" value={phone} type="phone" className="form-input w-full text-gray-800" placeholder="Enter your phone number" required />
                   </div>
                 </div>
                 <div className="flex flex-wrap -mx-3 mb-4">
                   <div className="w-full px-3">
-                    <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="country">Country</label>
-                    <select id="country" name="country" className="form-select w-full text-gray-500">
-                      <option value="United States">United States</option>
-                      <option value="United Kingdom">United Kingdom</option>
-                      <option value="Germany">Germany</option>
+                    <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="country">Subject</label>
+                    <select id="country" name="subject" className="form-select w-full text-gray-500">
+                      <option value="Employment Opportunities">Employment Opportunities</option>
+                      <option value="Insurance Question">Insurance Question</option>
+                      <option value="Schedule an Appointment">Schedule an Appointment</option>
                     </select>
                   </div>
                 </div>
@@ -217,7 +218,7 @@ function Support() {
                 </div>
                 <div className="flex flex-wrap -mx-3 mt-4">
                   <div className="w-full px-3">
-                    <button type="submit" className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full">Send</button>
+                    <button disabled={loading} type="submit" className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full">Send</button>
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mt-4">
