@@ -2,6 +2,7 @@ import React, { useRef, useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import emailjs from '@emailjs/browser';
 import Header from '../partials/Header';
+import logo from '../images/logoIcon.png';
 
 import Footer from '../partials/Footer';
 import 'react-toastify/dist/ReactToastify.css';
@@ -58,7 +59,7 @@ function Support() {
         {/* Contact section */}
         <section className="bg-gradient-to-b from-gray-100 to-gray-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+            <div className="pt-32 pb-12 md:pt-20 md:pb-20">
 
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
@@ -118,6 +119,57 @@ function Support() {
             </div>
           </div>
         </section>
+        <section className="bg-gradient-to-b from-gray-100 to-gray-200">
+ <div className="max-w-6xl mx-auto px-4 sm:px-6">
+   <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+
+     {/* Section header */}
+     {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
+       <h1 className="h1 mb-4" data-aos="zoom-y-out">Get in touch with our team</h1>
+       <p className="text-xl text-gray-600" data-aos="zoom-y-out" data-aos-delay="150">Select a category to email the support team or contact us directly by using the form below.</p>
+     </div> */}
+
+     {/* Items */}
+     <div className="max-w-sm mx-auto grid gap-6 items-center md:max-w-xl" data-aos-id-blocks>
+
+       {/* 1st item */}
+       <div className="relative flex flex-col p-6 bg-white  rounded shadow-xl" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-blocks]">
+       <img className='m-auto w-2/3' src={logo} alt="audimojis"/>
+         {/* <svg className="w-12 h-12 mb-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+           <circle className="fill-current text-blue-600" cx="24" cy="24" r="24" />
+           <g transform="translate(8 8)" strokeWidth="2">
+             <path className="stroke-current text-blue-300" d="M23.778 8.222l-4.242 4.242M23.778 23.778l-4.242-4.242M8.222 23.778l4.242-4.242M8.222 8.222l4.242 4.242" />
+             <circle className="stroke-current text-white" transform="rotate(-45 16 16)" cx="16" cy="16" r="11" fill="none" />
+             <circle className="stroke-current text-blue-300" transform="rotate(-45 16 16)" cx="16" cy="16" r="5" fill="none" />
+           </g>
+         </svg> */}
+         <h4 className="md:text-xl text-lg ml-12 font-bold mb-1">480 S. Willard St Cottonwood, AZ 86326</h4>
+         <div className='flex justify-around px-10 text-xl'>
+          <div className='flex-col '>
+            <p className="text-gray-600">Monday</p>
+            <p className="text-gray-600">Tuesday</p>
+            <p className="text-gray-600">Wednesday</p>
+            <p className="text-gray-600">Thursday</p>
+            <p className="text-gray-600">Friday</p>
+            <p className="text-gray-600">Saturday</p>
+            <p className="text-gray-600">Saturday</p>
+          </div>
+          <div className='flex-col'>
+            <p className="text-gray-600">Closed</p>
+            <p className="text-gray-600">7AM-6PM</p>
+            <p className="text-gray-600">7AM-6PM</p>
+            <p className="text-gray-600">7AM-6PM</p>
+            <p className="text-gray-600">7AM-6PM</p>
+            <p className="text-gray-600">Closed</p>
+            <p className="text-gray-600">Closed</p>
+          </div>
+         </div>
+       </div>
+     </div>
+
+   </div>
+ </div>
+</section>
         {/* <button onClick={()=>confirmation()}>Success</button>
         <button onClick={()=>failed()}>Failed</button> */}
       </main>

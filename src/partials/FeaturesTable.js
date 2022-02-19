@@ -3,7 +3,7 @@ import React from 'react';
 function FeaturesTable() {
   return (
     <section>
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="max-w-6xl mt-10 mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
@@ -63,7 +63,7 @@ function FeaturesTable() {
                     <div className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
                   </td>
                   <td className="text-sm sm:text-base pr-2 py-4">
-                    <div className="font-medium text-teal-50">Balance and Gate Disorders</div>
+                    <div className="font-medium text-teal-50">Balance and Gait Disorders</div>
                     <div className="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
                   </td>
                 </tr>

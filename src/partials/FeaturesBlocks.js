@@ -52,7 +52,7 @@ function FeaturesBlocks() {
                 </g>
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Balance & Gate Disorders</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Balance & Gait Disorders</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
@@ -130,6 +130,7 @@ function FeaturesBlocks() {
 
         </div>
       </div>
+      
     </section>
   );
 }

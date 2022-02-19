@@ -76,14 +76,14 @@ function HeroHome() {
                 </svg>
                 <span className="ml-3">Watch the full video (2 min)</span>
               </button> */}
-              <a className="absolute top-full flex items-center transform -translate-y-1/2 rounded-full font-medium group p-4 shadow-lg bg-gradient-to-t from-teal-5 to-white hover:text-teal-50" href="#features">
-                <span className="ml-6 mr-6">Our Mission</span>
+              <a className="absolute top-full flex items-center transform -translate-y-1/2 rounded-full font-medium group p-4 shadow-lg bg-gradient-to-t from-teal-5 to-white hover:text-teal-50" href="#features-blocks">
+                <span className="ml-6 mr-6">Our Services</span>
               </a>
             </div>
 {/* Section header */}
 <div className="text-center pb-12 md:pb-16 md:pt-10">
             <h1 className="text-2xl md:text-3xl font-bold italic leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Empowering Our Community One Person At A Time.</h1>
-            <h1 className="text-5xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-50 to-yellow-50">Northern Arizona Rehabilitation and Fitness</h1>
+            <h1 className="text-4xl md:text-5xl font-bold leading-tighter tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-50 to-yellow-50">Northern Arizona Rehabilitation and Fitness</h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">

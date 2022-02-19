@@ -75,7 +75,7 @@ function TestimonialsCarousel() {
     <section className="relative">
 
       {/* Social icons illustrations */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-20 pointer-events-none" aria-hidden="true">
+      {/* <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 mb-20 pointer-events-none" aria-hidden="true"> */}
         {/* <svg width="1360" height="365" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
           <defs>
             <filter x="-50%" y="-25%" width="200%" height="200%" filterUnits="objectBoundingBox" id="scill-sh">
@@ -127,16 +127,16 @@ function TestimonialsCarousel() {
             </g>
           </g>
         </svg> */}
-      </div>
+      {/* </div> */}
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 border-b border-gray-200">
-        <div className="py-12 md:py-20">
+        <div className="py-12 md:py-24">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">Trusted by over 20,000 companies all over the world</h2>
-            <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
-                blandit libero cursus mattis.</p>
+          <div className="max-w-3xl mx-auto text-center pb-4 md:pb-4">
+            <h2 className="h2 mb-4">See What Our Patients are Saying about Us</h2>
+            {/* <p className="text-xl text-gray-600" data-aos="zoom-y-out">Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis
+                blandit libero cursus mattis.</p> */}
           </div>
 
           

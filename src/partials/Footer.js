@@ -36,12 +36,18 @@ function Footer() {
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-4">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
-            <ul className="text-sm">
+            <h6 className="text-gray-800 font-medium mb-2">Address</h6>
+            <p className='text-gray-600 text-sm'>480 S. Willard St Cottonwood, AZ 86326</p>
+            <h6 className="text-gray-800 font-medium mt-2 mb-2">Phone</h6>
+            <p className='text-gray-600 text-sm'>928-649-9726</p>
+            <h6 className="text-gray-800 font-medium mt-2 mb-2">Hours</h6>
+            <p className='text-gray-600 text-sm'>7AM - 6PM Tuesday - Friday</p>
+            <p className='text-red-600 text-sm'>*Closed Saturday-Monday</p>
+            {/* <ul className="text-sm">
               <li className="mb-2">
                 <Link to="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Services</Link>
               </li>
-              {/* <li className="mb-2">
+              <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</Link>
               </li>
               <li className="mb-2">
@@ -52,8 +58,8 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Command-line</Link>
-              </li>                            */}
-            </ul>
+              </li>                           
+            </ul> */}
           </div>
 
           {/* 3rd block */}
@@ -64,10 +70,16 @@ function Footer() {
                 <Link to="/" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Home</Link>
               </li>
               <li className="mb-2">
+                <Link to="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Services</Link>
+              </li>
+              <li className="mb-2">
                 <Link to="/about" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About us</Link>
               </li>
               <li className="mb-2">
                 <Link to="/support" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Contact us</Link>
+              </li>
+              <li className="mb-2">
+                <Link to="/404" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">New Patients</Link>
               </li>
               {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>

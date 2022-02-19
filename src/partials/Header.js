@@ -72,7 +72,7 @@ return (
           <>
             <a href='#home' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Home</a>
             <a href='#features' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Overview</a>
-            <a href='#features-blocks' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Features</a>
+            <a href='#features-blocks' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Services</a>
           </>
         }
         <li>
