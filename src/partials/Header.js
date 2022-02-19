@@ -46,7 +46,7 @@ return () => window.removeEventListener('scroll', scrollHandler);
 return (
 <header className={`fixed w-full z-30 md:bg-opacity-90 transition duration-300 ease-in-out ${!top && 'bg-white blur shadow-lg'}`}>
   <div className="max-w-6xl mx-auto px-5 sm:px-6">
-    <div className="flex items-center justify-between h-16 md:h-20">
+    <div className="flex items-center justify-between h-20 md:h-20">
 
       {/* Site branding */}
       <div className="flex-shrink-0 mr-4 ">
@@ -103,20 +103,14 @@ return (
           <Dropdown title="Resources">
             {/* 2nd level: hover */}
             <li>
-              <Link to="/documentation" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Documentation</Link>
+              <Link to="/pricing" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Services</Link>
             </li>
             <li>
-              <Link to="/support" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Support center</Link>
+              <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">New Patient</Link>
             </li>
-            <li>
+            {/* <li>
               <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
-            </li>
-            <li>
-            <Link to="/pricing" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Audimojis</Link>
-          </li>
-            <li>
-              <a href='#hero-home' className='page-scroll font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight'>home</a>
-            </li>
+            </li> */}
           </Dropdown>
           
           <li>
@@ -189,42 +183,18 @@ return (
           <li>
               <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">Team</Link>
         </li>
-          {/* {
-          location.pathname === '/about' ?
-          <li>
-            <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#intro' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>About us</a>
-            <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#team' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>Team</a>
-          </li>
-          :
-          <li>
-            <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">About us</Link>
-          </li>
-          } */}
-              {/* <li>
-                <Link to="/pricing" className="flex text-gray-600 hover:text-gray-900 py-2">Pricing</Link>
-              </li>
-              <li>
-                <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">About us</Link>
-              </li>
-              <li>
-                <Link to="/tutorials" className="flex text-gray-600 hover:text-gray-900 py-2">Tutorials</Link>
-              </li>  
-              <li>
-                <Link to="/blog" className="flex text-gray-600 hover:text-gray-900 py-2">Blog</Link>
-              </li>                                   
-              */}
             <li className="py-2 my-2 border-t border-b border-gray-200">
               <span className="flex text-gray-600 hover:text-gray-900 py-2">Resources</span>
               <ul className="pl-4">
                 <li>
-                  <Link to="/documentation" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Documentation</Link>
+                  <Link to="/pricing" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Services</Link>
                 </li>
                 <li>
-                  <Link to="/support" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Support center</Link>
+                  <Link to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">New Patient</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">404</Link>
-                </li>
+                </li> */}
               </ul>
             </li>
               <li className="py-2 my-2 border-b border-gray-200">

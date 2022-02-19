@@ -29,7 +29,7 @@ function PageNotFound() {
               </defs>
               <g fill="url(#illustration-01)" fillRule="evenodd">
                 <circle cx="1232" cy="128" r="128" />
-                <circle cx="155" cy="443" r="64" />
+                {/* <circle cx="155" cy="443" r="64" /> */}
               </g>
             </svg>
           </div>
@@ -38,9 +38,12 @@ function PageNotFound() {
             <div className="pt-32 pb-12 md:pt-40 md:pb-20">
               <div className="max-w-3xl mx-auto text-center">
                 {/* 404 content */}
-                <h1 className="h1 mb-4">Oh, No! You stumbled upon a rarity</h1>
-                <div className="mt-8">
-                  <Link to="/" className="btn text-white bg-blue-600 hover:bg-blue-700">Go back home</Link>
+                <h1 className="h1 mb-4">New Patient Info</h1>
+                <p className='text-left'>To help expedite your first visit, please download, print and complete these forms. Bring them with you when you come in for your first visit. If you choose to fill out the patient form packet at our office, please arrive 10-15 minutes before your appointment to allow enough time to get them completed before your appointment. If you have any questions give us a call.</p>
+                <div className="mt-8 flex justify-around w-full gap-16">
+                  <button to="/" className="btn text-white bg-teal-50 hover:bg-yellow-50 md:w-1/3 mb-4 sm:w-auto sm:mb-0">Patient Forms</button>
+                  <Link to="/support" className="btn text-white bg-teal-50 hover:bg-yellow-50 md:w-1/3 mb-4 sm:w-auto sm:mb-0">Contact Us</Link>
+                  <Link to="/" className="btn text-white bg-teal-50 hover:bg-yellow-50 w-64 mb-4 md:w-1/3 sm:w-auto sm:mb-0">Nothing</Link>
                 </div>
               </div>
             </div>

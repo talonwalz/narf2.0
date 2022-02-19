@@ -38,14 +38,14 @@ function FeaturesHome() {
           {/* <div className="pb-12 md:pb-16">
             <img src={require('../images/features-top-image.png').default} width="1104" height="325" alt="Features top" />
           </div> */}
-          <p>It is our mission to create an enjoyable family atmosphere and rewarding work environment where you are happy, love being here and can reach your individual aspirations and goals. Our entire staff is made up of very creative and high toned people who are committed to providing you with safe, effective and creative treatments. We promise to listen, understand and genuinely care about you and your condition. We will provide you with this level of service in a friendly, fun and compassionate atmosphere.</p>
+          <p style={{textIndent: "40px"}} className='text-lg'>It is our mission to create an enjoyable family atmosphere and rewarding work environment where you are happy, love being here and can reach your individual aspirations and goals. Our entire staff is made up of very creative and high toned people who are committed to providing you with safe, effective and creative treatments. We promise to listen, understand and genuinely care about you and your condition. We will provide you with this level of service in a friendly, fun and compassionate atmosphere.</p>
           <br/>
-          <p>At Northern Arizona Rehabilitation & Fitness, PC we specialize in treatment for all injuries to the spine, shoulder, elbow, wrist/hand, hip, knee and foot/ankle. At any time during the day, our clinic is filled with athletes and non-athletes alike ranging in age from 5-100.</p>
+          <p style={{textIndent: "40px"}} className='text-lg'>At Northern Arizona Rehabilitation & Fitness, PC we specialize in treatment for all injuries to the spine, shoulder, elbow, wrist/hand, hip, knee and foot/ankle. At any time during the day, our clinic is filled with athletes and non-athletes alike ranging in age from 5-100.</p>
           <br/>
-          <p>All our physical therapists are licensed by the state of Arizona and are actively involved in your program throughout the course of treatment. Your treatment will include a comprehensive initial examination and the development of an individualized treatment plan. Our rehabilitation environment allows for close supervision and personalized care; this ensures your program is performed safely and correctly. When it comes to physical therapy, we know you have a choice and we truly appreciate you choosing us!</p>
+          <p style={{textIndent: "40px"}} className='text-lg'>All our physical therapists are licensed by the state of Arizona and are actively involved in your program throughout the course of treatment. Your treatment will include a comprehensive initial examination and the development of an individualized treatment plan. Our rehabilitation environment allows for close supervision and personalized care; this ensures your program is performed safely and correctly. When it comes to physical therapy, we know you have a choice and we truly appreciate you choosing us!</p>
 
           {/* Section content */}
-          <div className="md:grid md:grid-cols-12 md:gap-6">
+          <div className="pt-12 md:pt-10 md:grid md:grid-cols-12 md:gap-6">
 
             {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
@@ -56,7 +56,7 @@ function FeaturesHome() {
               {/* Tabs buttons */}
               <div className="mb-8 md:mb-0">
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-teal-50 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-teal-10 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
@@ -71,7 +71,7 @@ function FeaturesHome() {
                   </div>
                 </a>
                 <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-teal-50 border-transparent'}`}
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-teal-10 border-transparent'}`}
                   href="#0"
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >

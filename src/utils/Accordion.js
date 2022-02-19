@@ -19,15 +19,15 @@ function Accordion({
   return (
     <Component>
       <button
-        className="flex items-center w-full text-lg font-medium text-left py-5 border-t border-gray-200"
+        className="flex items-center w-full text-lg font-medium text-center py-5 border-t border-gray-200"
         onClick={(e) => { e.preventDefault(); setAccordionOpen(!accordionOpen); }}
         aria-expanded={accordionOpen}
       >
-        <svg className="w-4 h-4 fill-current text-blue-500 flex-shrink-0 mr-8 -ml-12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <svg className="w-4 h-4 fill-current text-yellow-50 flex-shrink-0 mr-8 -ml-12" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
           <rect y="7" width="16" height="2" rx="1" className={`transform origin-center transition duration-200 ease-out ${accordionOpen && 'rotate-180'}`} />
           <rect y="7" width="16" height="2" rx="1" className={`transform origin-center rotate-90 transition duration-200 ease-out ${accordionOpen && 'rotate-180'}`} />
         </svg>
-        <span>{title}</span>
+        <p className='border-transparent text-teal-50'>{title}</p>
       </button>
       <div
         ref={accordion}

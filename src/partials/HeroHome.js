@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Modal from '../utils/Modal';
 
 
@@ -75,8 +76,8 @@ function HeroHome() {
                 </svg>
                 <span className="ml-3">Watch the full video (2 min)</span>
               </button> */}
-              <a className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg" href="#features">
-                <span className="ml-6 mr-6 hover:text-teal-50">Our Mission</span>
+              <a className="absolute top-full flex items-center transform -translate-y-1/2 rounded-full font-medium group p-4 shadow-lg bg-gradient-to-t from-teal-5 to-white hover:text-teal-50" href="#features">
+                <span className="ml-6 mr-6">Our Mission</span>
               </a>
             </div>
 {/* Section header */}
@@ -87,7 +88,7 @@ function HeroHome() {
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">To promote, enhance, and facilitate the quality of life and the recovery of normal movement for our patients through skilled therapeutic intervention.</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
-                  <a className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Schedule Appointment</a>
+                  <Link to="/support" className="btn text-white bg-teal-50 hover:bg-yellow-50 w-full mb-4 sm:w-auto sm:mb-0" href="#0">Schedule Appointment</Link>
                 </div>
                 {/* <div>
                   <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Learn more</a>

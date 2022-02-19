@@ -1,3 +1,5 @@
+// const { textIndent } = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [
     'public/index.html',
@@ -31,6 +33,8 @@ module.exports = {
           900: '#004391',
         },
         teal: {
+          5: '#d1e6e8',
+          10: "#8cc0c7",
           50: '#19818e',
           100: '#E6FFFA',
           200: '#B2F5EA',

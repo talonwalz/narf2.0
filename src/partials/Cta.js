@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Cta() {
 
@@ -20,7 +21,7 @@ function Cta() {
 
               {/* CTA button */}
               <div>
-                <a className="btn text-teal-50 bg-gradient-to-r from-blue-100 to-white" href="#0">Contact us</a>
+                <Link to="/support" className="btn text-teal-50 bg-gradient-to-r from-blue-100 to-white">Contact us</Link>
               </div>
 
             </div>

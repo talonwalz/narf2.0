@@ -19,10 +19,10 @@ function Pricing() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <PricingTables />
+        {/* <PricingTables /> */}
         <FeaturesTable />
         <TestimonialsCarousel />
-        <Faqs />
+        {/* <Faqs /> */}
         <Cta />   
 
       </main>

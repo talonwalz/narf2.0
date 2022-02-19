@@ -39,7 +39,7 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Audimojis</Link>
+                <Link to="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Services</Link>
               </li>
               {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">DynamicBox Flex</Link>

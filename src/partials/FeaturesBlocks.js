@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function FeaturesBlocks() {
   return (
@@ -21,8 +22,8 @@ function FeaturesBlocks() {
           <div className="max-w-sm mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-start md:max-w-2xl lg:max-w-none">
 
             {/* 1st item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2">
@@ -32,14 +33,15 @@ function FeaturesBlocks() {
                     <path className="stroke-current text-white" strokeLinecap="square" d="M41.143 29.714l3.428-3.428-3.428-3.429" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Back Pain & Sciatica</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 2nd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2" transform="translate(19.429 20.571)">
@@ -48,14 +50,15 @@ function FeaturesBlocks() {
                     <path className="stroke-current text-blue-300" d="M16.161 18.406a6.848 6.848 0 003.268-5.835 6.857 6.857 0 00-6.858-6.857 6.857 6.857 0 00-6.857 6.857 6.848 6.848 0 003.268 5.835" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Balance & Gate Disorders</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 3rd item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2">
@@ -65,14 +68,15 @@ function FeaturesBlocks() {
                     <path className="stroke-current text-white" d="M24 32h3.429" strokeLinecap="square" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Post-Surgical Rehab</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 4th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
                   <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2">
@@ -82,41 +86,44 @@ function FeaturesBlocks() {
                     <path className="stroke-current text-blue-300" d="M21.714 40h4.572M24 37.714v4.572M37.714 24h4.572M40 21.714v4.572" strokeLinecap="square" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Arthritis</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 5th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
+                  <rect className="fill-current text-yellow-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2">
                     <path className="stroke-current text-white" d="M19.429 32a12.571 12.571 0 0021.46 8.89L23.111 23.11A12.528 12.528 0 0019.429 32z" />
                     <path className="stroke-current text-blue-300" d="M32 19.429c6.943 0 12.571 5.628 12.571 12.571M32 24a8 8 0 018 8" />
                     <path className="stroke-current text-white" d="M34.286 29.714L32 32" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default}/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">General Weakness</h4>
               <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
 
             {/* 6th item */}
-            <div className="relative flex flex-col items-center p-6 bg-white rounded shadow-xl">
-              <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+            <div className="relative flex flex-col items-center border-2 border-gray-100 p-6 bg-white rounded shadow-xl">
+              {/* <svg className="w-16 h-16 p-1 -mt-1 mb-2" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                 <g fill="none" fillRule="evenodd">
-                  <rect className="fill-current text-teal-50" width="64" height="64" rx="32" />
+                  <rect className="fill-current text-yellow-50" width="64" height="64" rx="32" />
                   <g strokeWidth="2" strokeLinecap="square">
                     <path className="stroke-current text-white" d="M29.714 40.358l-4.777 2.51 1.349-7.865-5.715-5.57 7.898-1.147L32 21.13l3.531 7.155 7.898 1.147L40 32.775" />
                     <path className="stroke-current text-blue-300" d="M44.571 43.429H34.286M44.571 37.714H34.286" />
                   </g>
                 </g>
-              </svg>
+              </svg> */}
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">See Full List</h4>
               {/* <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-              <a className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Treatments</a>
+              <Link to="/pricing" className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Treatments</Link>
             </div>
 
           </div>
@@ -128,3 +135,6 @@ function FeaturesBlocks() {
 }
 
 export default FeaturesBlocks;
+<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+</svg>
