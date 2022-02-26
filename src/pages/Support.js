@@ -54,8 +54,25 @@ function Support() {
       {/*  Site header */}
       <Header />
       {/*  Page content */}
-      <main className="flex-grow">
-
+      <main className="flex-grow relative">
+      {/* Illustration behind hero content */}
+      <div className="absolute top-32 left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-2" aria-hidden="true">
+        <svg width="1360" height="578" viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient x1="0%" x2="100%" y1="0%" y2="100%" id="illustration-01">
+              <stop stopColor="#FFF" offset="0%" />
+              <stop stopColor="#a3ccd2" offset="65%" />
+              <stop stopColor="#8cc0c7" offset="90%" />
+              <stop stopColor="#5ea6b0" offset="90%" />
+              <stop stopColor="#19818e" offset="100%" />
+            </linearGradient>
+          </defs>
+          <g fill="url(#illustration-01)" fillRule="evenodd">
+            <circle cx="1232" cy="128" r="128" />
+            <circle cx="155" cy="443" r="64" />
+          </g>
+        </svg>
+      </div>
         {/* Contact section */}
         <section className="bg-gradient-to-b from-gray-100 to-gray-200">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -64,7 +81,7 @@ function Support() {
               {/* Section header */}
               <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
                 <h1 className="h1">Contact us</h1>
-                <p className='pt-4 text-xl'>Request an appointment, seek employment opportunities, ask us a question, etc.</p>
+                <p className='pt-4 text-lg'>Request an appointment,ask us a question about insurance, seek employment opportunities, etc.</p>
               </div>
 
               {/* Contact form */}
@@ -95,9 +112,9 @@ function Support() {
                   <div className="w-full px-3">
                     <label className="block text-gray-800 text-sm font-medium mb-1" htmlFor="country">Subject</label>
                     <select id="country" name="subject" className="form-select w-full text-gray-500">
-                      <option value="Employment Opportunities">Employment Opportunities</option>
-                      <option value="Insurance Question">Insurance Question</option>
                       <option value="Schedule an Appointment">Schedule an Appointment</option>
+                      <option value="Insurance Question">Insurance Question</option>
+                      <option value="Employment Opportunities">Employment Opportunities</option>
                     </select>
                   </div>
                 </div>
@@ -113,15 +130,15 @@ function Support() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mt-4">
-                  By clicking "send" you consent to allow Simple to store and process the personal information submitted above and agree to our <a className="underline" href="#0">terms and conditions</a> as well as our <a className="underline" href="#0">Privacy Policy</a>.
+                  By clicking "send" you consent to allow Northern Arizona Rehab & Fitness to store and process the personal information submitted above and agree to our <a className="underline" href="#0">terms and conditions</a> as well as our <a className="underline" href="#0">Privacy Policy</a>. Please allow us 1-2 business to get back to you. 
                 </div>
               </form>
             </div>
           </div>
         </section>
         <section className="bg-gradient-to-b from-gray-100 to-gray-200">
- <div className="max-w-6xl mx-auto px-4 sm:px-6">
-   <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+ <div className="max-w-6xl mx-auto px-4 sm:px-6" id="hours">
+   <div className="pt-16 pb-16 md:pt-20 md:pb-20">
 
      {/* Section header */}
      {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
@@ -134,17 +151,11 @@ function Support() {
 
        {/* 1st item */}
        <div className="relative flex flex-col p-6 bg-white  rounded shadow-xl" data-aos="zoom-y-out" data-aos-anchor="[data-aos-id-blocks]">
-       <img className='m-auto w-2/3' src={logo} alt="audimojis"/>
-         {/* <svg className="w-12 h-12 mb-3" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-           <circle className="fill-current text-blue-600" cx="24" cy="24" r="24" />
-           <g transform="translate(8 8)" strokeWidth="2">
-             <path className="stroke-current text-blue-300" d="M23.778 8.222l-4.242 4.242M23.778 23.778l-4.242-4.242M8.222 23.778l4.242-4.242M8.222 8.222l4.242 4.242" />
-             <circle className="stroke-current text-white" transform="rotate(-45 16 16)" cx="16" cy="16" r="11" fill="none" />
-             <circle className="stroke-current text-blue-300" transform="rotate(-45 16 16)" cx="16" cy="16" r="5" fill="none" />
-           </g>
-         </svg> */}
-         <h4 className="md:text-xl text-lg ml-12 font-bold mb-1">480 S. Willard St Cottonwood, AZ 86326</h4>
-         <div className='flex justify-around px-10 text-xl'>
+       <img className='m-auto w-2/3' src={logo} alt="Narf"/>
+         <h4 className="md:text-2xl text-lg text-center font-bold mt-4">480 S. Willard St.</h4>
+         <h4 className="md:text-2xl text-lg text-center font-bold mb-4">Cottonwood, AZ 86326</h4>
+         <h4 className="md:text-xl text-lg text-center font-bold mb-4">928-649-9726</h4>
+         <div className='flex justify-around px-10 text-lg'>
           <div className='flex-col '>
             <p className="text-gray-600">Monday</p>
             <p className="text-gray-600">Tuesday</p>

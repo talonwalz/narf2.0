@@ -41,7 +41,7 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mt-2 mb-2">Phone</h6>
             <p className='text-gray-600 text-sm'>928-649-9726</p>
             <h6 className="text-gray-800 font-medium mt-2 mb-2">Hours</h6>
-            <p className='text-gray-600 text-sm'>7AM - 6PM Tuesday - Friday</p>
+            <p className='text-gray-600 text-sm mb-1'>7AM - 6PM Tuesday - Friday</p>
             <p className='text-red-600 text-sm'>*Closed Saturday-Monday</p>
             {/* <ul className="text-sm">
               <li className="mb-2">

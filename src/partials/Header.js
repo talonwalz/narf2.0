@@ -75,6 +75,11 @@ return (
             <a href='#features-blocks' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Services</a>
           </>
         }
+        { location.pathname === '/support' &&
+          <>
+            <a href='#hours' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Hours</a>
+          </>
+        }
         <li>
               <Link to="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Team</Link>
         </li>
@@ -180,6 +185,11 @@ return (
             <Link to="/" className="flex text-gray-600 hover:text-gray-900 py-2">Home</Link>
           </li>
           }
+          { location.pathname === '/support' &&
+          <li>
+            <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#hours' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>Hours</a>
+          </li>
+        }
           <li>
               <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">Team</Link>
         </li>
