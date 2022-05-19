@@ -3,11 +3,11 @@ import React from 'react';
 function FeaturesTable() {
   return (
     <section>
-      <div className="max-w-6xl mt-10 mx-auto px-4 sm:px-6">
-        <div className="pt-12 md:pt-20">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
+        <div className="pt-20 md:pt-20">
 
           {/* Section header */}
-          <div className="pb-12">
+          <div className="pb-4 md:pb-8">
             <h2 className="h2 text-center">What We Treat</h2>
           </div>
 

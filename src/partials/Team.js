@@ -5,11 +5,11 @@ function Team() {
   return (
     <section id="team" className="bg-gradient-to-b from-gray-100 to-white border-t border-gray-200 pt-10">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="py-12 md:py-20">
+        <div className="py-12 md:py-12">
 
           {/* Section header */}
           <div className="max-w-4xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2">The humans behind the exceptional care</h2>
+            <h2 className="h2">The Humans Behind The Exceptional Care</h2>
           </div>
 
           {/* Team members */}

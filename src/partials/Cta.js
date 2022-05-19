@@ -21,7 +21,7 @@ function Cta() {
 
               {/* CTA button */}
               <div>
-                <Link to="/support" className="btn text-teal-50 bg-gradient-to-r from-blue-100 to-white">Contact us</Link>
+                <Link to="/contact-us" className="btn text-teal-50 bg-gradient-to-r from-blue-100 to-white">Contact us</Link>
               </div>
 
             </div>

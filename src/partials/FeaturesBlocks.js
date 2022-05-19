@@ -6,7 +6,7 @@ function FeaturesBlocks() {
     <section id="features-blocks" className="relative">
 
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-900 pointer-events-none" aria-hidden="true"></div>
+      <div className="absolute inset-0 top-1/2 md:mt-24 lg:mt-0 bg-gray-700 pointer-events-none" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 bottom-0 m-auto w-px p-px h-20 bg-gray-200 transform translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
@@ -14,8 +14,8 @@ function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 mb-4">What do we treat?</h2>
-            <p className="text-xl text-gray-600">We have seen and treated almost everything but here are some of our most common things we treat.</p>
+            <h2 className="h2 mb-4">What Do We Treat?</h2>
+            <p className="text-xl text-gray-600">We have seen and treated almost everything but here are some of our most common things</p>
           </div>
 
           {/* Items */}
@@ -36,7 +36,7 @@ function FeaturesBlocks() {
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Back Pain & Sciatica</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Physical discomfort occurring anywhere on the spine or back, ranging from mild to disabling or pain that radiates along the path of the sciatic nerve.</p>
             </div>
 
             {/* 2nd item */}
@@ -53,7 +53,7 @@ function FeaturesBlocks() {
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Balance & Gait Disorders</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Gait disorders can cause abnormal movements impacting the way you walk and run, and these can become exacerbated with age.</p>
             </div>
 
             {/* 3rd item */}
@@ -71,7 +71,7 @@ function FeaturesBlocks() {
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Post-Surgical Rehab</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Rebuild lost muscle from atrophy, retrain the body of the use of everything affected by the surgery, and help control post-surgical pain.</p>
             </div>
 
             {/* 4th item */}
@@ -89,7 +89,7 @@ function FeaturesBlocks() {
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Arthritis</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">Joint inflammation, causing pain and stiffness that can worsen with age. Different types of arthritis exist, each with different causes.</p>
             </div>
 
             {/* 5th item */}
@@ -104,9 +104,9 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg> */}
-              <img className="w-16 mb-2" src={require('../images/circle.jpg').default}/>
+              <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="Narf"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">General Weakness</h4>
-              <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className="text-gray-600 text-center">A person experiencing weakness may not be able to move a certain part of their body properly which can quickly result in more serious injuries.</p>
             </div>
 
             {/* 6th item */}
@@ -122,8 +122,7 @@ function FeaturesBlocks() {
               </svg> */}
               <img className="w-16 mb-2" src={require('../images/circle.jpg').default} alt="narf infinity"/>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">See Full List</h4>
-              {/* <p className="text-gray-600 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-              <Link to="/pricing" className="btn page-scroll text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Treatments</Link>
+              <Link to="/treatments" className="btn mt-6 mb-6 text-white bg-teal-50 hover:bg-yellow-50 w-40 h-12 sm:w-auto sm:ml-4" href="#features">Treatments</Link>
             </div>
 
           </div>

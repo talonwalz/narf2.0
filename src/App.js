@@ -22,6 +22,7 @@ import Help from './pages/Support';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
+import NewPatient from './pages/NewPatient';
 import PageNotFound from './pages/PageNotFound';
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
         <Route path="/tutorials">
           <Tutorials />
         </Route>
-        <Route path="/pricing">
+        <Route path="/treatments">
           <Pricing />
         </Route>
         <Route path="/blog">
@@ -64,13 +65,13 @@ function App() {
         <Route path="/blog-post">
           <BlogPost />
         </Route>
-        <Route path="/about">
+        <Route path="/team">
           <About />
         </Route>
         <Route path="/documentation">
           <Documentation />
         </Route>
-        <Route path="/support">
+        <Route path="/contact-us">
           <Help />
         </Route>
         <Route path="/signin">
@@ -81,6 +82,9 @@ function App() {
         </Route>
         <Route path="/reset-password">
           <ResetPassword />
+        </Route>
+        <Route path="/new-patient">
+          <NewPatient />
         </Route>
         <Route path="*">
           <PageNotFound />

@@ -75,13 +75,13 @@ return (
             <a href='#features-blocks' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Services</a>
           </>
         }
-        { location.pathname === '/support' &&
+        { location.pathname === '/contact-us' &&
           <>
             <a href='#hours' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Hours</a>
           </>
         }
         <li>
-              <Link to="/about" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Team</Link>
+              <Link to="/team" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Team</Link>
         </li>
         {/* {
           location.pathname === '/about' ?
@@ -108,10 +108,10 @@ return (
           <Dropdown title="Resources">
             {/* 2nd level: hover */}
             <li>
-              <Link to="/pricing" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Services</Link>
+              <Link to="/treatments" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Services</Link>
             </li>
             <li>
-              <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">New Patient</Link>
+              <Link to="/new-patient" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">New Patient</Link>
             </li>
             {/* <li>
               <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
@@ -119,7 +119,7 @@ return (
           </Dropdown>
           
           <li>
-              <Link to="/support" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Contact us</Link>
+              <Link to="/contact-us" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Contact us</Link>
             </li>
         </ul>
 
@@ -185,22 +185,22 @@ return (
             <Link to="/" className="flex text-gray-600 hover:text-gray-900 py-2">Home</Link>
           </li>
           }
-          { location.pathname === '/support' &&
+          { location.pathname === '/contact-us' &&
           <li>
             <a onClick={() => setMobileNavOpen(!mobileNavOpen)} href='#hours' className='page-scroll flex text-gray-600 hover:text-gray-900 py-2'>Hours</a>
           </li>
         }
           <li>
-              <Link to="/about" className="flex text-gray-600 hover:text-gray-900 py-2">Team</Link>
+              <Link to="/team" className="flex text-gray-600 hover:text-gray-900 py-2">Team</Link>
         </li>
             <li className="py-2 my-2 border-t border-b border-gray-200">
               <span className="flex text-gray-600 hover:text-gray-900 py-2">Resources</span>
               <ul className="pl-4">
                 <li>
-                  <Link to="/pricing" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Services</Link>
+                  <Link to="/treatments" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Services</Link>
                 </li>
                 <li>
-                  <Link to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">New Patient</Link>
+                  <Link to="/new-patient" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">New Patient</Link>
                 </li>
                 {/* <li>
                   <Link to="/404" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">404</Link>
@@ -208,7 +208,7 @@ return (
               </ul>
             </li>
               <li className="py-2 my-2 border-b border-gray-200">
-              <Link to="/support" className="flex text-gray-600 hover:text-gray-900 py-2">Contact us</Link>
+              <Link to="/contact-us" className="flex text-gray-600 hover:text-gray-900 py-2">Contact us</Link>
             </li>
               {/* <li>
                 <Link to="/signin" className="flex font-medium w-full text-gray-600 hover:text-gray-900 py-2 justify-center">Sign in</Link>
