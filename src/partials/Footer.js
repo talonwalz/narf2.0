@@ -42,7 +42,7 @@ function Footer() {
             <p className='text-gray-600 text-sm'>928-649-9726</p>
             <h6 className="text-gray-800 font-medium mt-2 mb-2">Hours</h6>
             <p className='text-gray-600 text-sm mb-1'>7AM - 6PM Tuesday - Friday</p>
-            <p className='text-red-600 text-sm'>*Closed Saturday-Monday</p>
+            <p className='text-red-600 text-sm'>*Closed Saturday - Monday</p>
             {/* <ul className="text-sm">
               <li className="mb-2">
                 <Link to="/pricing" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Services</Link>
@@ -80,6 +80,9 @@ function Footer() {
               </li>
               <li className="mb-2">
                 <Link to="/new-patient" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">New Patients</Link>
+              </li>
+              <li className="mb-2">
+                <a href="/contact-us/#hours" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hours</a>
               </li>
               {/* <li className="mb-2">
                 <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>

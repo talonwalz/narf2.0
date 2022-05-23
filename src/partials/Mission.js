@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import Transition from '../utils/Transition.js';
+import React, { } from 'react';
+// import Transition from '../utils/Transition.js';
 
 function Mission() {
 

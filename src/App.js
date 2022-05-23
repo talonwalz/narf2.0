@@ -74,6 +74,9 @@ function App() {
         <Route path="/contact-us">
           <Help />
         </Route>
+        <Route path="/contact-us/#hours">
+          <Help />
+        </Route>
         <Route path="/signin">
           <SignIn />
         </Route>

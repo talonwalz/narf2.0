@@ -13,7 +13,7 @@ function Support() {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [message, setMessage] = useState('');
-  const [country, setCountry] = useState('');
+  // const [country, setCountry] = useState('');
   const [loading, setLoading] = useState(false);
   
   const form = useRef();

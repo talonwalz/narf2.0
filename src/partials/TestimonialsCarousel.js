@@ -169,7 +169,7 @@ function TestimonialsCarousel() {
                       </svg>
                       {/* <img className="relative rounded-full" src={require(`../images/${item.img}`).default} width="96" height="96" alt={item.alt} /> */}
                     </div>
-                    <blockquote className="text-xl font-medium mb-4">{item.quote}</blockquote>
+                    <blockquote className="text-sm sm:text-base font-medium mb-4">{item.quote}</blockquote>
                     <cite className="block font-bold text-lg not-italic mb-1">{item.name}</cite>
                     {/* <div className="text-gray-600">
                       <span>{item.role}</span> <a className="text-blue-600 hover:underline" href={item.href}>{item.team}</a>

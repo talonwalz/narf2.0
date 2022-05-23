@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-import PricingTables from '../partials/PricingTables';
+// import PricingTables from '../partials/PricingTables';
 import FeaturesTable from '../partials/FeaturesTable';
 import TestimonialsCarousel from '../partials/TestimonialsCarousel';
-import Faqs from '../partials/Faqs';
+// import Faqs from '../partials/Faqs';
 import Cta from '../partials/Cta';
 import Footer from '../partials/Footer';
 
