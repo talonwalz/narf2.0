@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import logo from '../images/logoIcon.png';
 
 
@@ -15,17 +16,7 @@ function Footer() {
           <div className="sm:col-span-12 lg:col-span-4">
             <div className="mb-2">
               {/* Logo */}
-              <Link to="/" className="inline-block" aria-label="Cruip">
-                {/* <svg className="w-8 h-8" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                  <defs>
-                    <radialGradient cx="21.152%" cy="86.063%" fx="21.152%" fy="86.063%" r="79.941%" id="footer-logo">
-                      <stop stopColor="#4FD1C5" offset="0%" />
-                      <stop stopColor="#81E6D9" offset="25.871%" />
-                      <stop stopColor="#338CF5" offset="100%" />
-                    </radialGradient>
-                  </defs>
-                  <rect width="32" height="32" rx="16" fill="url(#footer-logo)" fillRule="nonzero" />
-                </svg> */}
+              <Link to="/" className="inline-block" aria-label="Narf">
                 <img src={logo} alt="audimojis"/>
               </Link>
             </div>
@@ -82,14 +73,8 @@ function Footer() {
                 <Link to="/new-patient" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">New Patients</Link>
               </li>
               <li className="mb-2">
-                <a href="/contact-us/#hours" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hours</a>
+                <HashLink smooth to="/contact-us#hours" className="smooth-scroll text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hours</HashLink>
               </li>
-              {/* <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</Link>
-              </li> */}
             </ul>
           </div>
 
@@ -147,8 +132,8 @@ function Footer() {
           {/* Social links */}
           <ul className="flex mb-4 md:order-1 md:ml-4 md:mb-0">
             <li className="ml-4">
-              <a href="https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz" target="_blank" rel="noreferrer"  className="flex justify-center items-center text-gray-900 hover:text-gray-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Google">
-              <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 md:w-16 md:h-16 relative top-3 left-3 md:top-4 md:left-4 fill-current" fill="currentColor" class="bi bi-google" viewBox="0 0 32 32">
+              <a href="https://www.google.com/search?q=northern+arizona+rehab+and+fitness&rlz=1C5CHFA_enUS939US939&sxsrf=ALeKk01GrOB8Kt4JBAPwqzUz-jI3EGUq2A%3A1618265615150&ei=D8Z0YJDFCMmUtAbi0rTABA&oq=norther&gs_lcp=Cgdnd3Mtd2l6EAEYADIECCMQJzIFCAAQkQIyBQguEJECMgoILhCHAhCxAxAUMgUIABCRAjIFCAAQkQIyBQguEJECMgUIABCxAzIFCAAQsQMyDQguEIcCEMcBEK8BEBQ6BwgjELADECc6BwgAEEcQsAM6EAguEMcBEKMCELADEMgDEEM6CgguELADEMgDEENKBQg4EgExUKMJWKMJYLUQaAFwAngAgAGPAYgBjQKSAQMwLjKYAQCgAQGqAQdnd3Mtd2l6yAEPwAEB&sclient=gws-wiz" target="_blank" rel="noreferrer"  className="flex justify-center items-center text-gray-900 hover:text-yellow-50 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Google">
+              <svg xmlns="http://www.w3.org/2000/svg" className="w-12 h-12 md:w-16 md:h-16 relative top-3 left-3 md:top-4 md:left-4 fill-current bi bi-google" fill="currentColor" viewBox="0 0 32 32">
                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
               </svg>
               </a>
@@ -159,7 +144,7 @@ function Footer() {
               </Link>
             </li> */}
             <li className="ml-4">
-              <a href="https://www.facebook.com/norazrehab" target="_blank" rel="noreferrer"  className="flex justify-center items-center text-gray-900 hover:text-gray-600 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
+              <a href="https://www.facebook.com/norazrehab" target="_blank" rel="noreferrer"  className="flex justify-center items-center text-gray-900 hover:text-yellow-50 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" aria-label="Facebook">
                 <svg className="w-12 h-12 md:w-16 md:h-16 fill-current" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                   <path d="M14.023 24L14 17h-3v-3h3v-2c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V14H21l-1 3h-2.72v7h-3.257z" />
                 </svg>

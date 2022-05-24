@@ -136,9 +136,9 @@ function Support() {
             </div>
           </div>
         </section>
-        <section className="bg-gradient-to-b from-gray-100 to-gray-200">
- <div className="max-w-6xl mx-auto px-4 sm:px-6" id="hours">
-   <div className="pt-16 pb-16 md:pt-20 md:pb-20">
+        <section id="hours" className="bg-gradient-to-b from-gray-100 to-gray-200">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+         <div className="pt-16 pb-16 md:pt-20 md:pb-20">
 
      {/* Section header */}
      {/* <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
