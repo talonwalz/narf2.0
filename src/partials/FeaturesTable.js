@@ -43,7 +43,7 @@ function FeaturesTable() {
                     <div className="text-teal-50">Physical discomfort of the shoulder, including the joint itself or the muscles, tendons, and ligaments that support the joint.</div>
                   </td>
                   <td className="text-sm text-center px-8 py-4">
-                    <div className="font-medium text-xl  text-gray-900">Hip Pain</div>
+                    <div className="font-medium text-2xl  text-gray-900">Hip Pain</div>
                     <div className="text-teal-50">Physical discomfort in the hip, which varies from mild to severe.</div>
                   </td>
                 </tr>

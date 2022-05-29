@@ -130,8 +130,11 @@ function Support() {
                   </div>
                 </div>
                 <div className="text-sm text-gray-600 mt-4">
-                  By clicking "send" you consent to allow Northern Arizona Rehab & Fitness to store and process the personal information submitted above and agree to our <a className="underline" href="#0">terms and conditions</a> as well as our <a className="underline" href="#0">Privacy Policy</a>. Please allow us 1-2 business to get back to you. 
+                  By clicking "send" you consent to allow Northern Arizona Rehab & Fitness to store and process the personal information submitted above. Please allow us 1-2 business to get back to you. 
                 </div>
+                {/* <div className="text-sm text-gray-600 mt-4">
+                  By clicking "send" you consent to allow Northern Arizona Rehab & Fitness to store and process the personal information submitted above and agree to our <a className="underline" href="#0">terms and conditions</a> as well as our <a className="underline" href="#0">Privacy Policy</a>. Please allow us 1-2 business to get back to you. 
+                </div> */}
               </form>
             </div>
           </div>

@@ -20,9 +20,9 @@ function Footer() {
                 <img src={logo} alt="audimojis"/>
               </Link>
             </div>
-            <div className="text-sm text-gray-600">
+            {/* <div className="text-sm text-gray-600">
               <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
-            </div>
+            </div> */}
           </div>
 
           {/* 2nd block */}
@@ -73,7 +73,7 @@ function Footer() {
                 <Link to="/new-patient" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">New Patients</Link>
               </li>
               <li className="mb-2">
-                <HashLink smooth to="/contact-us#hours" className="smooth-scroll text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hours</HashLink>
+                <HashLink smooth to="/contact-us#hours" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Hours</HashLink>
               </li>
             </ul>
           </div>

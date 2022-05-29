@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import forms from '../images/Patientforms.pdf';
 import Header from '../partials/Header';
 
 import Footer from '../partials/Footer';
@@ -41,9 +41,9 @@ function NewPatient() {
                 <h1 className="h2 mb-4">New Patient Info</h1>
                 <p className='text-left'>To help expedite your first visit, please download, print and complete these forms. Bring them with you when you come in for your first visit. If you choose to fill out the patient form packet at our office, please arrive 10-15 minutes before your appointment to allow enough time to get them completed before your appointment. If you have any questions give us a call.</p>
                 <div className="mt-8 flex md:flex-row flex-col md:justify-around w-full md:gap-16">
-                  <button to="/" className="btn text-white bg-teal-50 hover:bg-yellow-50 md:w-1/3 mb-4 sm:w-auto sm:mb-0">Patient Forms</button>
+                  <a href={forms} target="_blank" rel="noreferrer" className="btn text-white bg-teal-50 hover:bg-yellow-50 md:w-1/3 mb-4 sm:w-auto sm:mb-0">Patient Forms</a>
                   <Link to="/contact-us" className="btn text-white bg-teal-50 hover:bg-yellow-50 md:w-1/3 mb-4 sm:w-auto sm:mb-0">Contact Us</Link>
-                  <Link to="/" className="btn text-white bg-teal-50 hover:bg-yellow-50 mb-4 md:w-1/3 sm:w-auto sm:mb-0">Nothing</Link>
+                  {/* <Link to="/" className="btn text-white bg-teal-50 hover:bg-yellow-50 mb-4 md:w-1/3 sm:w-auto sm:mb-0">Home</Link> */}
                 </div>
               </div>
             </div>

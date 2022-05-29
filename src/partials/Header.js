@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 import Transition from '../utils/Transition.js';
 import Dropdown from '../utils/Dropdown';
 import logo from '../images/logoIcon.png';
@@ -76,11 +77,10 @@ return (
           </>
         }
         { location.pathname === '/contact-us' &&
-          <>
-            <a href='#hours' className='page-scroll text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out'>Hours</a>
-          </>
+        <li>
+          <HashLink smooth to="/contact-us#hours" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Hours</HashLink>
+        </li>
         }
-        
         <li>
               <Link to="/team" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Team</Link>
         </li>
@@ -109,21 +109,14 @@ return (
           <Dropdown title="Resources">
             {/* 2nd level: hover */}
             <li>
-              <Link to="/treatments" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Services</Link>
+              <Link to="/treatments" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">What We Treat</Link>
             </li>
             <li>
               <Link to="/new-patient" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">New Patient</Link>
             </li>
             <li>
-                { location.pathname === '/contact-us' ?
-                  <a href="#hours" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Hours</a>
-                  :
-                  <a href="/contact-us/#hours" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Hours</a>
-                }
+              <HashLink smooth to="/contact-us#hours" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Hours</HashLink>
             </li>
-            {/* <li>
-              <Link to="/404" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">404</Link>
-            </li> */}
           </Dropdown>
           
           <li>
@@ -205,10 +198,13 @@ return (
               <span className="flex text-gray-600 hover:text-gray-900 py-2">Resources</span>
               <ul className="pl-4">
                 <li>
-                  <Link to="/treatments" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Services</Link>
+                  <Link to="/treatments" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">What We Treat</Link>
                 </li>
                 <li>
                   <Link to="/new-patient" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">New Patient</Link>
+                </li>
+                <li>
+                <HashLink smooth to="/contact-us#hours" className="text-sm flex font-medium text-gray-600 hover:text-gray-900 py-2">Hours</HashLink>
                 </li>
               </ul>
             </li>
