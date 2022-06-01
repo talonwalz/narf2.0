@@ -34,7 +34,7 @@ function Accordion({
         className="text-gray-600 overflow-hidden transition-all duration-300 ease-in-out"
         style={accordionOpen ? { maxHeight: accordion.current.scrollHeight, opacity: 1 } : { maxHeight: 0, opacity: 0 }}
       >
-        <p className="pb-5">{children}</p>
+        <div className="pb-5">{children}</div>
       </div>
     </Component>
   );
@@ -44,7 +44,7 @@ export default Accordion;
 
 Accordion.propTypes = {
   children: PropTypes.oneOfType([
-    PropTypes.string.isRequired
+    PropTypes.element.isRequired
   ]),
   tag: PropTypes.string,
   title: PropTypes.string.isRequired,
