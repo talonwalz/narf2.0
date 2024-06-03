@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-import PostSingle from '../partials/PostSingle';
+import PostSingle from '../partials/PostSingleJSON';
 import Footer from '../partials/Footer';
 
 function BlogPost() {

@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Transition from '../utils/Transition.js';
-import Dropdown from '../utils/Dropdown';
+// import Dropdown from '../utils/Dropdown';
 import logo from '../images/logoIcon.png';
 
 function Header(props) {
@@ -104,10 +104,12 @@ return (
           {/* Take out Blog for now */}
           {/* <li>
             <Link to="/blog" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Blog</Link>
-          </li>               */}
+        </li>  */}
+          <li> 
+          <Link to="/new-patient" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">New Patient</Link>
+          </li>
           {/* 1st level: hover */}
-          <Dropdown title="Resources">
-            {/* 2nd level: hover */}
+          {/* <Dropdown title="Resources">
             <li>
               <Link to="/treatments" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">What We Treat</Link>
             </li>
@@ -117,7 +119,7 @@ return (
             <li>
               <HashLink smooth to="/contact-us#hours" className="font-medium text-sm text-gray-600 hover:text-gray-900 flex py-2 px-5 leading-tight">Hours</HashLink>
             </li>
-          </Dropdown>
+          </Dropdown> */}
           
           <li>
               <Link to="/contact-us" className="text-gray-600 hover:text-gray-900 px-3 lg:px-5 py-2 flex items-center transition duration-150 ease-in-out">Contact us</Link>

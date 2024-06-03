@@ -1,0 +1,13 @@
+{
+    "Blogs":
+        {
+        "title": "Why we think Simple is good for developers",
+        "author": "Micheal Osman",
+        "date": " · July 17, 2020",
+        "introduction": "INTRODUCTION -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet.",
+        "general_content": "GENERAL CONTENT -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet.",
+        "additional_reading": "ADDITIONAL READING -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet.",
+        "conclusion": "CONCLUSION -- Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis enim lobortis scelerisque fermentum. Neque sodales ut etiam sit amet.",
+        "id": "1"
+    }
+}
